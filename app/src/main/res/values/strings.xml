@@ -1,0 +1,708 @@
+<resources>
+
+
+    <string name="app_name">EstatePie</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="select_category_title"><u>Select Category</u></string>
+    <string name="residential">Residential</string>
+    <string name="commercial">Commercial</string>
+    <string-array name="category">
+        <item>Residential</item>
+        <item>Commercial</item>
+    </string-array>
+
+    <string-array name="category_filter">
+        <item>Select One</item>
+        <item>Residential</item>
+        <item>Commercial</item>
+    </string-array>
+
+    <string-array name="all_properties">
+        <item>All Properties</item>
+        <item>Residential</item>
+        <item>Commercial</item>
+    </string-array>
+
+    <string name="property_type_title"><u>Property Type</u></string>
+    <string name="bungalow">Bungalow</string>
+    <string name="apartment">Apartment</string>
+    <string name="duplex">Duplex</string>
+    <string name="chalet">Chalet</string>
+    <string name="townhouse">Townhouse</string>
+    <string name="mansion">Mansion</string>
+    <string name="condominium">Condominium</string>
+
+    <string-array name="property_type">
+        <item>Apartment</item>
+        <item>Bungalow</item>
+        <item>Chalet</item>
+        <item>Condominium</item>
+        <item>Duplex</item>
+        <item>Mansion</item>
+        <item>Townhouse</item>
+    </string-array>
+
+    <string name="for_sale_for_rent_title"><u>For Sale / For Rent</u></string>
+    <string name="for_sale">For Sale</string>
+    <string name="for_rent">For Rent</string>
+    <string-array name="for_sale_for_rent">
+        <item>For Sale</item>
+        <item>For Rent</item>
+    </string-array>
+
+    <string-array name="for_sale_for_rent_filter">
+        <item>Select One</item>
+        <item>For Sale</item>
+        <item>For Rent</item>
+    </string-array>
+
+    <string name="amenities_title"><u>Amenities</u></string>
+    <string name="cinema">Cinema</string>
+    <string name="library">Library</string>
+    <string name="playground">Playground</string>
+    <string name="swimming_pool">Swimming Pool</string>
+    <string name="ev_charging_station">EV charging station</string>
+    <string name="business_center">Business Center</string>
+    <string name="parking">Parking</string>
+    <string name="washing_machine">Washing Machine</string>
+    <string name="gym">Gym</string>
+    <string-array name="amenities">
+        <item>Cinema</item>
+        <item>Library</item>
+        <item>Parking</item>
+        <item>Playground</item>
+        <item>Washing Machine</item>
+        <item>EV charging station</item>
+        <item>Business Center</item>
+        <item>Gym</item>
+        <item>Swimming Pool</item>
+    </string-array>
+
+    <string name="fees_title"><u>Fees</u></string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string-array name="fees">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="fees_filter">
+        <item>Select One</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="broker_title"><u>Broker</u></string>
+    <string-array name="broker">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string-array name="range_slider">
+        <item>1</item>
+        <item>10000</item>
+    </string-array>
+
+    <string-array name="all_bills">
+        <item>All Bills</item>
+        <item>Electricity</item>
+        <item>Gas</item>
+        <item>Phone</item>
+        <item>Trash</item>
+        <item>Security</item>
+        <item>Water</item>
+        <item>Service Fee</item>
+        <item>Late Fee</item>
+    </string-array>
+
+    <string-array name="unit_array">
+        <item>Sq yds</item>
+        <item>Sq mt</item>
+        <item>Sq ft</item>
+        <item>Acres</item>
+    </string-array>
+
+
+    <string-array name="all_status">
+        <item>All Status</item>
+        <item>Paid</item>
+        <item>UnPaid</item>
+    </string-array>
+
+    <string-array name="all_reports">
+        <item>All Reports</item>
+        <item>In-Progress</item>
+        <item>Resolved</item>
+    </string-array>
+
+    <string-array name="maintenance_reports">
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="select_date">
+        <item>9-7-2002</item>
+        <item>7-9-2022</item>
+        <item>1-1-2023</item>
+    </string-array>
+
+    <string-array name="all">
+        <item>All</item>
+        <item>In Progress</item>
+        <item>Resolved</item>
+    </string-array>
+
+    <string-array name="sort_by_price">
+        <item>Low To High</item>
+        <item>High To Low</item>
+    </string-array>
+
+    <string-array name="asec_desc">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+    <string-array name="all_incident_report">
+        <item>All</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="all_event_array">
+        <item>All</item>
+        <item>UpComing</item>
+        <item>Past</item>
+    </string-array>
+
+    <string-array name="incident_report">
+        <item>All</item>
+        <item>Under Review</item>
+        <item>Resolved</item>
+    </string-array>
+
+
+    <string-array name="vehicle_make_array">
+        <item>Alfa</item>
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Ford</item>
+        <item>Honda</item>
+        <item>Hummer</item>
+        <item>jaguar</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Land</item>
+        <item>Hundai</item>
+        <item>Infiniti</item>
+    </string-array>
+
+    <string-array name="vehicle_model_array">
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+
+    <string-array name="vehicle_color_array">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+        <item>White</item>
+    </string-array>
+
+
+
+
+    <string-array name="lease_duration_array">
+        <item>1 Month</item>
+        <item>2 Months</item>
+        <item>3 Months</item>
+        <item>4 Months</item>
+        <item>5 Months</item>
+        <item>6 Months</item>
+        <item>7 Months</item>
+        <item>8 Months</item>
+        <item>9 Months</item>
+        <item>10 Months</item>
+        <item>11 Months</item>
+        <item>12 Months</item>
+        <item>13 Months</item>
+        <item>14 Months</item>
+        <item>15 Months</item>
+    </string-array>
+
+    <string name="write_storage_permission_required">Write Storage Permission Required</string>
+    <string name="read_storage_permission_required">Read Storage Permission Required</string>
+    <string name="enable_read_storage_permission">Enable Read Storage Permission</string>
+    <string name="enable_write_storage_permission">Enable Write Storage Permission</string>
+    <string name="enable_camera_permission">Enable Camera Permission</string>
+    <string name="camera_permission_required">Camera Permission Required</string>
+    <string name="current_location_not_available">Current Location Not Available</string>
+    <string name="access_location_permission_required">Access Location Permission Required</string>
+    <string name="location_services_are_not_enabled">Location Services Are Not Enabled</string>
+
+    //------------------------------- Invalidate Text Resdential property -------------------------
+
+    <string name="enter_building_name">Enter Building Name</string>
+    <string name="enter_building_number">Enter Building Number</string>
+    <string name="enter_building_location">Enter Place Location</string>
+    <string name="upload_image">Please Upload Image</string>
+    <string name="enter_start_no_range">Enter Start No Range</string>
+    <string name="enter_end_no_range">Enter End No Range</string>
+    <string name="enter_start_alpha_range">Enter Start Alpha Range</string>
+    <string name="enter_end_alpha_range">Enter End Alpha Range</string>
+    <string name="enter_notes">Enter Notes</string>
+    <string name="enter_date_time">Select Date Time</string>
+    <string name="enter_invoice_amount">Enter Invoice Amount</string>
+    <string name="enter_lease_duration">Enter Lease Duration</string>
+    <string name="enter_bill_type">Select Bill Type</string>
+    <string name="enter_lease_amount">Enter Lease Amount</string>
+    <string name="enter_property_name">Select Property Name</string>
+
+
+    <string name="as_easy_as_pie">As Easy As Pie</string>
+    <string name="help_you_find">Help you find the best place to stay!</string>
+    <string name="intro_description">Easy process, affordable prices  and you can get any units that you  like anywhere, anytime.</string>
+    <string name="explore_ads"><u>Explore Ads</u></string>
+    <string name="login">Log In</string>
+    <string name="tenant_signup">Tenant Sign Up</string>
+    <string name="management_signup">Management Sign Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_id_or_username">Email ID or Username</string>
+    <string name="continue_with_apple">Continue with Apple</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="login_small">Login</string>
+    <string name="input_your_email_and_password">Input your email and password</string>
+    <string name="email_Address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? <font color="#2C8DEE"><b>Sign Up</b></font></string>
+    <string name="resend_code"><font color="#2C8DEE"><u>Click here to resend the verification email.</u></font></string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="forgot_msg">Enter your registered email below\nto receive password reset instructions.</string>
+    <string name="submit">Submit</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="next">Next</string>
+    <string name="have_any_account">Have any account? <font color="#2C8DEE"><b>Sign In</b></font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_is_business">What is your business name?</string>
+    <string name="enter_business_name">Enter your business or Individual name.</string>
+    <string name="sign_up_text">Sign up here if you own, manage, or want to list a property for rent or for sale.</string>
+    <string name="enter_business_or_ind">Enter Business or Individual name</string>
+    <string name="enter_business_loc">Enter your business Location?</string>
+    <string name="enter_loc">Enter Business Location</string>
+    <string name="subscribe_plans">Subscriber Plans</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="free">Free</string>
+    <string name="web_access_mobile_app"><![CDATA[Web Access & Mobile App]]></string>
+    <string name="keep_it_basic">Keep it Basic!</string>
+    <string name="web_and_mobile_app">Web and Mobile App</string>
+    <string name="automatic_payments">Automatic payments</string>
+    <string name="unlimited_tenant_management">Unlimited Tenant management</string>
+    <string name="invoicing_receipts"><![CDATA[Invoicing & Receipts]]></string>
+    <string name="property_management">Property Management</string>
+    <string name="excel_csv_data_import"><![CDATA[Excel & CSV data Import]]></string>
+    <string name="billing_payments"><![CDATA[Billing & Payments]]></string>
+    <string name="profile">Profile</string>
+    <string name="maintenance_requests">Maintenance Requests</string>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="free_ads_listings">Free Ads/ Listings</string>
+    <string name="monthly">Monthly</string>
+    <string name="_99_00_usd">99.00 USD</string>
+    <string name="month">Month</string>
+    <string name="per_month">/Month</string>
+    <string name="per_year">/Year</string>
+    <string name="select_plan">SELECT PLAN</string>
+    <string name="explore">Explore</string>
+    <string name="popular_near_you">Popular Near you</string>
+    <string name="no_data_found">No Results</string>
+    <string name="per_sale">/Sale</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="view_all">View All</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="avail_status">Availability Status</string>
+    <string name="description">Description</string>
+    <string name="add_tenants_by_email">Add Tenant first time only by searching Tenant email address then click Add.</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et.</string>
+    <string name="leasing_terms">Leasing Terms on Posted listings</string>
+    <string name="get_in_touch">Get in Touch</string>
+    <string name="company_profile">Company Profile</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="about">About</string>
+    <string name="property_ads">Property Ads</string>
+    <string name="title_activity_main_management">MainManagementActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">EstatePie</string>
+    <string name="nav_header_subtitle">As Easy As Pie</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="user_settings">User Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="import_csv_excel">Import CSV, Excel</string>
+    <string name="help_and_support"><![CDATA[Help & Support]]></string>
+    <string name="tips">Tips</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="logout"><font color='#eb4335'>Logout</font></string>
+    <string name="dashboard">Dashboard</string>
+    <string name="properties">Properties</string>
+    <string name="tenants">Tenants</string>
+    <string name="billing">Billing</string>
+    <string name="requests">Requests</string>
+    <string name="hy_text">Hi,</string>
+    <string name="rent_fees">Rents\nFees</string>
+    <string name="all_reports">All\nReports</string>
+    <string name="utility_bills_payments">Utility Bills\nPayments</string>
+    <string name="your_overall_statistics">Your overall statistics</string>
+    <string name="tenants_txt">Tenants</string>
+    <string name="search">Search</string>
+    <string name="request_maintenance">Request\nMaintenance</string>
+    <string name="incident_nreports">Incident\nReports</string>
+    <string name="event_nupdates">Event\nUpdates</string>
+
+    <string name="address">Rafi Garden Sahiwal.</string>
+    <string name="modern_house">Modern House</string>
+    <string name="price">$5000</string>
+    <string name="ads">Ads</string>
+    <string name="add_residential_property">Add Residential\nProperty</string>
+    <string name="update_residential_property">Update Residential\nProperty</string>
+    <string name="use_this_for_single_unit">Use this for single unit</string>
+    <string name="apartment_building_name">Apartment / Building Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="apartment_building_number">Apartment / Building Number</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="or">OR</string>
+    <string name="use_this_for_multiple_units">Use this for multiple units</string>
+    <string name="number_range_if_any">Number Range (If any)</string>
+    <string name="_0">0</string>
+    <string name="_25">25</string>
+    <string name="alphanumeric_range_if_any">Alphanumeric Range (If any)</string>
+    <string name="_15a">15A</string>
+    <string name="_15f">15F</string>
+    <string name="upload_photos">Upload Photos</string>
+    <string name="address_txt">Address</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="notes">Notes</string>
+    <string name="add_some_additional_notes_id_any">Add some additional notes, if any</string>
+    <string name="save">Save</string>
+    <string name="ok">Ok</string>
+    <string name="notifications_settings">Notification Settings</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="email_notifications">Email Notification</string>
+    <string name="add_commercial_property">Add Commercial\nProperty</string>
+    <string name="update_commercial_property">Update Commercial\nProperty</string>
+    <string name="new_ad_listing">New Ad Listing</string>
+    <string name="update_ad_listing">Update Ad Listing</string>
+    <string name="post">Post</string>
+    <string name="broker">Broker</string>
+    <string name="fees">Fees</string>
+    <string name="size_area">Size / Area</string>
+    <string name="unit">Unit</string>
+    <string name="amenities">Amenities</string>
+    <string name="lease_duration_months">Lease Duration (Months)</string>
+    <string name="for_sale_for_rent">For Sale / For Rent</string>
+    <string name="no_of_bads">No of beds</string>
+    <string name="empty_field">Empty Field</string>
+    <string name="property_type">Property Type</string>
+    <string name="lease_duration">Lease Duration</string>
+    <string name="priceTxt">Price</string>
+    <string name="leasing_terms_txt">Leasing Terms</string>
+    <string name="view_bills">View Bills</string>
+    <string name="user_name">User Name</string>
+    <string name="house_23">House (23)</string>
+    <string name="send_invoice">Send Invoice</string>
+    <string name="select_property">Select Property</string>
+    <string name="property_name">Property name</string>
+    <string name="select_date_time"><![CDATA[Select Date & Time]]></string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="invoice_amount">Invoice Amount</string>
+    <string name="amount_txt">$ Amount</string>
+    <string name="bill_type">Bill Type</string>
+    <string name="select_bill_type">Select Bill Type</string>
+    <string name="send">Send</string>
+    <string name="view">View</string>
+    <string name="most_earning">Most Earning</string>
+    <string name="my_requests">My Requests</string>
+    <string name="tenants_profile">Tenants Profile</string>
+    <string name="jeux_developers">Jeux Developers</string>
+    <string name="add_note">Add Note</string>
+    <string name="add_card">Add Card</string>
+    <string name="add_additional_notes_here">Add additional notes here....</string>
+    <string name="lease_due_date">Lease Due Date</string>
+    <string name="date">07-27-2022</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="test">test</string>
+    <string name="move_in_date">Move In Date</string>
+    <string name="unassign_property">Unassign Property</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="incident_txt">To use this Feature, please\nsubscribe to our standard or\npremium plan.</string>
+    <string name="all">All</string>
+    <string name="all_properties">All Properties</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="date2">04 Aug 2022</string>
+
+    <string name="billing_management">Billing management</string>
+    <string name="paid_bills">Paid Bills</string>
+    <string name="unpaid_bills">Unpaid Bills</string>
+
+    <string name="online_3hours_ago">Online 3Hours Ago</string>
+    <string name="aditya">Aditya</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_business_name_txt">Enter Business Name</string>
+    <string name="business_name">Business Name</string>
+    <string name="enter_business_location">Enter Business Location</string>
+    <string name="business_location">Business Location</string>
+    <string name="email_address">Email Address</string>
+    <string name="change_password">Change Password</string>
+    <string name="save_edits">Save Edits</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="retype_new_password">Retype New Password</string>
+    <string name="update">Update</string>
+    <string name="dialog_txt">To use this feature please subscribe\nto our premium plan.</string>
+
+    <string name="maintenance_request_will_be_show_here">Maintenance Request will be show here.</string>
+    <string name="inbox">Inbox</string>
+    <string name="lease_reminder">Lease Reminder</string>
+    <string name="upcoming_bills">Upcoming\nBills</string>
+    <string name="incident_reports">Incident\nReports</string>
+    <string name="upcoming_bills_txt">Upcoming Bills</string>
+    <string name="all_bills">All Bills</string>
+    <string name="all_status">All Status</string>
+    <string name="incident_reports_txt">Incident Reports</string>
+    <string name="all_reports_txt">All Reports</string>
+    <string name="select_date">Select Date</string>
+    <string name="adapter">Adapter</string>
+    <string name="my_bills">My Bills</string>
+    <string name="my_tenants">My Tenants</string>
+    <string name="broadcast_messages">Broadcasts\nMessages</string>
+    <string name="paid_bills_will_be_shown_here">Paid Bills will be shown here.</string>
+    <string name="incident_reports_will_be_shown_here">Incident Reports will be shown here.</string>
+    <string name="maintenance_reports_will_be_shown_here">Maintenance Reports will be shown here.</string>
+    <string name="request_reports"><![CDATA[Request & Reports]]></string>
+    <string name="request_title">Request Title</string>
+    <string name="request_type">Request Type</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="property">Property</string>
+    <string name="select_one">Select One</string>
+    <string name="add_description">Add description</string>
+    <string name="drop_your_image_here_or_browse">Drop your image here, or <font color='#01C6DB'>Browse</font></string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="n_a">N/A</string>
+    <string name="vehicle_information">Vehicle Information</string>
+    <string name="my_vehicle">My Vehicle</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="vehicle_make">Vehicle Make</string>
+    <string name="model_year">Model Year</string>
+    <string name="upload">Upload</string>
+    <string name="color">Color</string>
+    <string name="license_plate">License Plate</string>
+    <string name="haider">haider</string>
+    <string name="ali">Ali</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_favorite">My Favorite</string>
+    <string name="filters">Filters</string>
+    <string name="enter_keyword">Enter Keyword</string>
+    <string name="search_by_location">Search by location</string>
+    <string name="sort_by_price">Sort by price</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_no_of_bathrooms">No of bathrooms</string>
+    <string name="select_no_of_bedrooms">No of bedrooms</string>
+    <string name="bedrooms">Bedrooms</string>
+    <string name="smoking">Smoking</string>
+    <string name="pets">Pets</string>
+    <string name="price_range">Price Range</string>
+    <string name="price_k">$ 1.0-10000.0</string>
+    <string name="price_one">1</string>
+    <string name="average_price">Average Price</string>
+    <string name="apply">Apply</string>
+    <string name="price_5k">100000000</string>
+    <string name="payment_management">Payment Management</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="make_a_payment">Make a Payment</string>
+    <string name="payment_history">Payment History</string>
+    <string name="payment_schedule">Payment Schedule</string>
+    <string name="payment_settings">Payment Settings</string>
+    <string name="frontal_view_of_your_vehicle">Frontal view of your vehicle</string>
+    <string name="haiderali_gmail_com">haiderali@gmail.com</string>
+    <string name="haider_ali">Haider ali</string>
+    <string name="create_event">Create Event</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_type">Event Type</string>
+    <string name="date_txt">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="add_details_about_your_event">Add details about your event</string>
+    <string name="notification">Notification</string>
+    <string name="crystal_flores">Crystal Flores</string>
+    <string name="hey_you_what_s_up_man">Hey you, What\'s up? Man?</string>
+    <string name="add_property">Add Property</string>
+    <string name="dialog_leasing_txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</string>
+    <string name="photo">Photo</string>
+    <string name="location_txt">Location</string>
+    <string name="availabilty_status">Availability Status</string>
+    <string name="listed_by_user">Listed by user</string>
+    <string name="added_time">Added Time</string>
+    <string name="multi_units">Multi Units</string>
+
+    <string name="name_of_apartment_or_building">Name of Apartment or building</string>
+    <string name="angela_jaemi_favorite_huit">Angela jaemi Favorite Huit</string>
+    <string name="reacted_to_your_story">reacted to your story.</string>
+    <string name="_1_hour_ago">1 hour ago</string>
+    <string name="helps_and_support">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</string>
+    <string name="tips_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</string>
+    <string name="privacy_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</string>
+    <string name="subscription">Subscription</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="unpaid_bills_will_be_shown_here">Unpaid Bills will be shown here.</string>
+    <string name="trash">Trash</string>
+    <string name="edit_payment_schedule">Edit Payment Schedule</string>
+    <string name="add_payment_schedule">Add Payment Schedule</string>
+    <string name="schedule_this_payment_for_every_month">Schedule this payment for\nevery month.</string>
+    <string name="edit_schedule">Edit Schedule</string>
+    <string name="aug_4_2022_06_55_am">Aug 4, 2022, 06:55 AM</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="add_schedule">Add Schedule</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="validity">Validity</string>
+    <string name="cvv">CVV</string>
+    <string name="update_card">Update Card</string>
+    <string name="low_to_high">Low To High</string>
+    <string name="high_to_low">High To Low</string>
+    <string name="most_recent">Most Recent</string>
+    <string name="_1_0_10000_0">$ 1.0-10000.0</string>
+    <string name="sort_by_price_title"><u>Sort by price</u></string>
+
+    <string name="smoking_title"><u>Smoking</u></string>
+    <string name="pets_title"><u>Pets</u></string>
+    <string name="multiple_units_available">Multiple Units Available</string>
+    <string name="is_available">Is Available</string>
+    <string name="subscription_plans">Subscription Plans</string>
+    <string name="no_of_bedrooms">No of Bedrooms</string>
+
+
+    <string name="google_login_success">Google Login Successfully</string>
+    <string name="user_save_error">User Saving Error, Please Try Again</string>
+    <string name="user_not_login_error">User Not Login, Please Try Again</string>
+    <string name="invalid_api_request_error">Invalid Request Sent, Please Try Again</string>
+    <string name="invalid_api_response_error">Invalid Response Received, Please Try Again</string>
+    <string name="loading">please wait...</string>
+    <string name="title"><u>Title</u></string>
+
+    <string name="favorite_before_login">You need to login to complete this request</string>
+    <string name="_4444">$4444</string>
+    <string name="status">status</string>
+    <string name="_2022_11_8">2022-11-8</string>
+    <string name="billing_detail">Billing Detail</string>
+    <string name="invoice">Invoice</string>
+    <string name="assign_tenant">Assign Tenant</string>
+    <string name="lease_amount">Lease Amount</string>
+    <string name="logout_txt">Do you really want to logout?</string>
+    <string name="delete_account_txt">Do you really want to delete an account?</string>
+    <string name="_1_month_ago">1 month ago</string>
+    <string name="_5000">$5000</string>
+    <string name="dollar">$</string>
+
+    // fb cred
+    <string name="facebook_app_id">1043120530028868</string>
+    <string name="fb_login_protocol_scheme">fb1043120530028868</string>
+    <string name="facebook_client_token">4bced743d46e00672c0fbe179271c6b4</string>
+
+    <string name="added">Added</string>
+    <string name="name">Name</string>
+    <string name="tenant_information">Tenant Information</string>
+    <string name="delete">Delete</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="pr">$ 0</string>
+    <string name="ascending">Ascending</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="licence_plate">Licence Plate: </string>
+    <string name="color_txt">Color:</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="_0_0">0.0%</string>
+    <string name="earnings">Earnings</string>
+    <string name="sub_properties">Sub Properties</string>
+    <string name="_1_month">1 Month</string>
+    <string name="total_collected">Total Collected</string>
+    <string name="vacant_properties">Vacant Properties</string>
+    <string name="zero_dollar">$0</string>
+    <string name="maintenance_report">Maintenance Report</string>
+    <string name="incident_repo">Incident Report</string>
+    <string name="browse_file">Browse File</string>
+    <string name="download_sample">Download Sample</string>
+    <string name="browse_and_choose_the_file_you_want_to_upload">Browse and choose the file\nyou want to upload</string>
+    <string name="upload_csv_file">Upload CSV File</string>
+    <string name="_txt">Browse File</string>
+    <string name="_00_00_pm_00_00_pm">00:00 PM - 00:00 Pm</string>
+    <string name="write_a_comment">Write a Comment</string>
+    <string name="comment_not_added_yet">Comment not added yet.</string>
+    <string name="comment">Comment</string>
+    <string name="premium">Premium</string>
+    <string name="standard">Standard</string>
+    <string name="card_type">Card Type</string>
+    <string name="visa">Visa</string>
+    <string name="x_no">XXXX XXXX XXXX </string>
+    <string name="expiry">Expiry</string>
+    <string name="_11_2027">11/2027</string>
+    <string name="visa_caps">VISA</string>
+    <string name="_6593">6593</string>
+    <string name="bathrooms">Bathrooms</string>
+    <string name="management">Management</string>
+
+
+</resources>

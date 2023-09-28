@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_navigation"
+    app:startDestination="@id/maintenanceTenantsFragment">
+    <fragment
+        android:id="@+id/maintenanceTenantsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.tenants.bottom.dashboard.maintainrequest.MaintenanceTenantsFragment"
+        android:label="fragment_maintenance_tenants"
+        tools:layout="@layout/fragment_maintenance_tenants" />
+    <fragment
+        android:id="@+id/upcomingBillsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.tenants.bottom.dashboard.upcomingbills.UpcomingBillsFragment"
+        android:label="fragment_upcoming_bills"
+        tools:layout="@layout/fragment_upcoming_bills" />
+    <fragment
+        android:id="@+id/incidentTenantsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.tenants.bottom.dashboard.incidentreport.IncidentTenantsFragment"
+        android:label="fragment_incident_tenants"
+        tools:layout="@layout/fragment_incident_tenants" />
+</navigation>

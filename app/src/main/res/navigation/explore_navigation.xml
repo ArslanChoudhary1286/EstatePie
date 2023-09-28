@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_navigation"
+    app:startDestination="@id/exploreAdsFragment">
+
+    <fragment
+        android:id="@+id/exploreAdsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.explore.exploreads.ExploreAdsFragment"
+        android:label="fragment_explore_ads"
+        tools:layout="@layout/fragment_explore_ads" >
+        <action
+            android:id="@+id/action_exploreAdsFragment_to_adDetailFragment"
+            app:destination="@id/adDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_exploreAdsFragment_to_addPropertyFragment"
+            app:destination="@id/addPropertyFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_exploreAdsFragment_to_viewAllFragment"
+            app:destination="@id/viewAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.explore.detail.AdDetailFragment"
+        android:label="fragment_ad_detail"
+        tools:layout="@layout/fragment_ad_detail" >
+        <action
+            android:id="@+id/action_adDetailFragment_to_companyProfileFragment"
+            app:destination="@id/companyProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyProfileFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.explore.company.CompanyProfileFragment"
+        android:label="fragment_company_profile"
+        tools:layout="@layout/fragment_company_profile" >
+        <action
+            android:id="@+id/action_companyProfileFragment_to_adDetailFragment"
+            app:destination="@id/adDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPropertyFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.explore.addproperty.AddPropertyFragment"
+        android:label="fragment_add_property"
+        tools:layout="@layout/fragment_add_property" />
+    <fragment
+        android:id="@+id/viewAllFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.explore.viewall.ViewAllFragment"
+        android:label="fragment_view_all"
+        tools:layout="@layout/fragment_view_all" >
+        <action
+            android:id="@+id/action_viewAllFragment_to_adsFilterFragment"
+            app:destination="@id/adsFilterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_viewAllFragment_to_adDetailFragment"
+            app:destination="@id/adDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/adsFilterFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.explore.filter.AdsFilterFragment"
+        android:label="fragment_ads_filter"
+        tools:layout="@layout/fragment_ads_filter" >
+        <action
+            android:id="@+id/action_adsFilterFragment_to_viewAllFragment"
+            app:destination="@id/viewAllFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+</navigation>

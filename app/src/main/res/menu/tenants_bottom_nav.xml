@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tenantsDashboardFragment"
+        android:title="@string/dashboard"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_dashboard"/>
+    <item
+        android:id="@+id/tenantsExploreFragment"
+        android:title="@string/explore"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_tenant"/>
+    <item
+        android:id="@+id/tenantsBillingFragment"
+        android:title="@string/billing"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_invoice"/>
+    <item
+        android:id="@+id/tenantsRequestFragment"
+        android:title="@string/requests"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_reports"/>
+    <item
+        android:id="@+id/tenantsProfileFragment"
+        android:title="@string/profile"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_requests"/>
+</menu>

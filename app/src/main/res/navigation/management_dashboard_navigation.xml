@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_navigation"
+    app:startDestination="@id/allReportsFragment">
+    <fragment
+        android:id="@+id/allReportsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.allreports.AllReportsFragment"
+        android:label="fragment_all_reports"
+        tools:layout="@layout/fragment_all_reports" />
+    <fragment
+        android:id="@+id/billsPaymentFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.billspayment.BillsPaymentFragment"
+        android:label="fragment_bills_payment"
+        tools:layout="@layout/fragment_bills_payment" />
+    <fragment
+        android:id="@+id/rentFeesFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.rentfees.RentFeesFragment"
+        android:label="fragment_rent_fees"
+        tools:layout="@layout/fragment_rent_fees" />
+</navigation>

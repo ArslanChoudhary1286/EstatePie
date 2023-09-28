@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_12sdp">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/amenities_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:background="@drawable/bg_spinner_item"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/n_a"
+        android:textColor="@color/blueDark"
+        android:layout_weight="1"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/roboto_regular"
+        app:buttonTint="@color/medium_gray"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="whiteBg">#F6F5F8</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteDarkInput">#FBFAF9</color>
+    <color name="blue">#2b90f2</color>
+    <color name="noti_bg">#E6F3FF</color>
+<!--    <color name="cardLight">#26FFFFFF</color>-->
+    <color name="cardLight">#FBFAF9</color>
+    <color name="blackDark">#131313</color>
+    <color name="blackMediumDark">#08172E</color>
+    <color name="blueVeryDark">#0F264D</color>
+    <color name="blackBlue">#0F264D</color>
+    <color name="whiteDark">#F6F6F6</color>
+    <color name="blueFacebook">#4E66A5</color>
+    <color name="redGoogle">#EB4335</color>
+    <color name="gray">#898989</color>
+    <color name="yellow">#FFC107</color>
+    <color name="grayLight">#1C000000</color>
+    <color name="blueHint">#C6CEDD</color>
+    <color name="green">#34D47B</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="grayBlue">#C6CEDD</color>
+    <color name="blueDark">#0F264D</color>
+    <color name="notFoundImg">#5F656A</color>
+    <color name="red">#EB4335</color>
+    <color name="blue_500">#FF1E74FD</color>
+    <color name="gray_200">#FFEEEEEE</color>
+    <color name="colorAlert">#DD2C00</color>
+    <color name="colorMediumGray">#999999</color>
+    <color name="color_house">#A4A4A6</color>
+    <color name="medium_gray">#A4A4A6</color>
+    <color name="color_card_bg">#F4F9FE</color>
+
+
+
+</resources>

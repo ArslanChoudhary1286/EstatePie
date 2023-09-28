@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@drawable/bg_login"
+    tools:context=".ui.fragments.management.bottom.properties.ads.updateAds.UpdateAdsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="?actionBarItemBackground"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_back_with_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/update_ad_listing"
+                android:textAlignment="center"
+                android:textColor="@color/blackDark"
+                android:textSize="@dimen/_24ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/apartment_building_name"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_building_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/apartment_building_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/category"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_select_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_category"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_category"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/category"-->
+        <!--                android:enabled="false"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/property_type"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_property_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/property_type"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_property"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/property_type"-->
+        <!--                android:enabled="false"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/no_of_bads"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_noOfBad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/no_of_bads"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/for_sale_for_rent"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_for_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/for_sale_for_rent"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_forSale"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/for_sale_for_rent"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:enabled="false"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/lease_duration_months"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_lease_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lease_duration"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_lease_duration"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/lease_duration"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:enabled="false"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/amenities"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_amenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amenities"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_amenities"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/amenities"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:enabled="false"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/unit"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/unit"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_unit"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/unit"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:enabled="false"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/size_area"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/size_area"
+                android:digits="0123456789"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/fees"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_fees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fees"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_fees"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/fees"-->
+        <!--                android:enabled="false"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/broker"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_broker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/broker"
+            android:textColorHint="@color/medium_gray"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_text_view"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            style="@style/DropdownField"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:boxBackgroundColor="@color/whiteDarkInput"-->
+        <!--            android:layout_marginHorizontal="@dimen/_12sdp"-->
+        <!--            android:layout_marginTop="@dimen/_8sdp">-->
+
+        <!--            <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+        <!--                android:id="@+id/et_broker"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:dropDownHeight="@dimen/_160sdp"-->
+        <!--                android:hint="@string/broker"-->
+        <!--                android:fontFamily="@font/roboto_regular"-->
+        <!--                android:inputType="text"-->
+        <!--                android:enabled="false"-->
+        <!--                android:paddingVertical="@dimen/_16sdp"-->
+        <!--                android:textColor="@color/blueDark"-->
+        <!--                android:textColorHint="@color/medium_gray"-->
+        <!--                android:textSize="@dimen/_14ssp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/priceTxt"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/priceTxt"
+                android:imeOptions="actionNext"
+                android:digits="1234567890"
+                android:inputType="textFilter"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/upload_photos"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_bg"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/upload_photo_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                tools:itemCount="1"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_add_image" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/address_txt"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enter_address"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/description"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/add_some_additional_notes_id_any"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/leasing_terms_txt"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blueDark" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppInputText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_leasing_terms"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/add_some_additional_notes_id_any"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:paddingVertical="@dimen/_16sdp"
+                android:textColor="@color/blueDark"
+                android:textColorHint="@color/medium_gray"
+                android:textSize="@dimen/_14ssp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/multi_unit_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/multiple_units_available"
+                android:textColor="@color/blueDark"
+                android:layout_weight="1"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/roboto_regular"
+                app:buttonTint="@color/medium_gray"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/available_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/is_available"
+                android:textColor="@color/blueDark"
+                android:layout_weight="1"
+                app:buttonTint="@color/medium_gray"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPost"
+            style="@style/AppGradientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:text="@string/post"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>

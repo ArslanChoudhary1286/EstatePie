@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".ui.fragments.auth.plans.PlansFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="?actionBarItemBackground"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_back_with_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/subscription_plans"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/AppTextButton"
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/roboto_light"
+                android:minWidth="0dp"
+                android:text="@string/skip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardBackgroundColor="@color/blue"
+            android:layout_margin="@dimen/_8sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/premium_img_Badge"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_badge_premium"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/premium_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/premium_img_Badge"
+                    app:layout_constraintTop_toTopOf="@id/premium_img_Badge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_24ssp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/premium"/>
+
+                <TextView
+                    android:id="@+id/premium_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/premium_title"
+                    app:layout_constraintStart_toStartOf="@id/premium_title"
+                    app:layout_constraintBottom_toBottomOf="@id/premium_img_Badge"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:text="@string/web_access_mobile_app"/>
+
+                <TextView
+                    android:id="@+id/premium_basic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/premium_img_Badge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/keep_it_basic"/>
+
+                <LinearLayout
+                    android:id="@+id/linDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/premium_basic_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/premium_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/white"
+                        android:text="@string/free_ads_listings"/>
+
+                    <LinearLayout
+                        android:id="@+id/linPlans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/premium_btn_monthly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_18sdp"
+                                android:paddingVertical="@dimen/_10ssp">
+
+                                <TextView
+                                    android:id="@+id/premium_monthly_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monthly"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                                <TextView
+                                    android:id="@+id/premium_monthly_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_99_00_usd"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/per_month"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="0dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/premium_btn_yearly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_18sdp"
+                                android:paddingVertical="@dimen/_10ssp">
+
+                                <TextView
+                                    android:id="@+id/premium_yearly_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monthly"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                                <TextView
+                                    android:id="@+id/premium_yearly_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_99_00_usd"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/per_year"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/premium_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        app:layout_constraintBottom_toTopOf="@id/btnTenantSignup"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        style="@style/AppSolidButton"
+                        android:textColor="@color/blueVeryDark"
+                        android:text="@string/select_plan"
+                        app:rippleColor="@color/blue"
+                        android:backgroundTint="@color/white"
+                        app:cornerRadius="@dimen/_6sdp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardBackgroundColor="@color/blue"
+            android:layout_margin="@dimen/_8sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/standard_img_Badge"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_badge_standard"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/standard_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/standard_img_Badge"
+                    app:layout_constraintTop_toTopOf="@id/standard_img_Badge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_24ssp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/standard"/>
+
+                <TextView
+                    android:id="@+id/standard_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/standard_title"
+                    app:layout_constraintStart_toStartOf="@id/standard_title"
+                    app:layout_constraintBottom_toBottomOf="@id/standard_img_Badge"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:text="@string/web_access_mobile_app"/>
+
+                <TextView
+                    android:id="@+id/standard_basic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/standard_img_Badge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/keep_it_basic"/>
+
+                <LinearLayout
+                    android:id="@+id/standard_linDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/standard_basic_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/standard_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/white"
+                        android:text="@string/free_ads_listings"/>
+
+                    <LinearLayout
+                        android:id="@+id/standard_linPlans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/standard_btn_monthly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_18sdp"
+                                android:paddingVertical="@dimen/_10ssp">
+
+                                <TextView
+                                    android:id="@+id/standard_monthly_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monthly"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                                <TextView
+                                    android:id="@+id/standard_monthly_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_99_00_usd"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/per_month"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="0dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/standard_btn_yearly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_18sdp"
+                                android:paddingVertical="@dimen/_10ssp">
+
+                                <TextView
+                                    android:id="@+id/standard_yearly_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monthly"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                                <TextView
+                                    android:id="@+id/standard_yearly_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_99_00_usd"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/per_year"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/standard_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        app:layout_constraintBottom_toTopOf="@id/btnTenantSignup"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        style="@style/AppSolidButton"
+                        android:textColor="@color/blueVeryDark"
+                        android:text="@string/select_plan"
+                        app:rippleColor="@color/blue"
+                        android:backgroundTint="@color/white"
+                        app:cornerRadius="@dimen/_6sdp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardBackgroundColor="@color/blue"
+            android:layout_margin="@dimen/_8sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp">
+
+                <ImageView
+                    android:id="@+id/free_img_Badge"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_badge_free"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/free_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/free_img_Badge"
+                    app:layout_constraintTop_toTopOf="@id/free_img_Badge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_24ssp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/free"/>
+
+                <TextView
+                    android:id="@+id/free_sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/free_title"
+                    app:layout_constraintStart_toStartOf="@id/free_title"
+                    app:layout_constraintBottom_toBottomOf="@id/free_img_Badge"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/white"
+                    android:text="@string/web_access_mobile_app"/>
+
+                <TextView
+                    android:id="@+id/free_basic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/free_img_Badge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/keep_it_basic"/>
+
+                <LinearLayout
+                    android:id="@+id/free_linDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/free_basic_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/free_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/white"
+                        android:text="@string/free_ads_listings"/>
+
+                    <LinearLayout
+                        android:id="@+id/free_linPlans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/free_btn_monthly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_18sdp"
+                                android:paddingVertical="@dimen/_10ssp">
+
+                                <TextView
+                                    android:id="@+id/free_monthly_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monthly"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                                <TextView
+                                    android:id="@+id/free_monthly_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_99_00_usd"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/per_month"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="0dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp">
+
+                            <LinearLayout
+                                android:id="@+id/free_btn_yearly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_18sdp"
+                                android:paddingVertical="@dimen/_10ssp">
+
+                                <TextView
+                                    android:id="@+id/free_yearly_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/monthly"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                                <TextView
+                                    android:id="@+id/free_yearly_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_99_00_usd"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/per_year"
+                                    android:textColor="@color/blueVeryDark"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textSize="@dimen/_8ssp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/free_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        app:layout_constraintBottom_toTopOf="@id/btnTenantSignup"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        style="@style/AppSolidButton"
+                        android:textColor="@color/blueVeryDark"
+                        android:text="@string/select_plan"
+                        app:rippleColor="@color/blue"
+                        android:backgroundTint="@color/white"
+                        app:cornerRadius="@dimen/_6sdp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

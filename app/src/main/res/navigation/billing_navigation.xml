@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_navigation"
+    app:startDestination="@id/paidBillsFragment">
+    <fragment
+        android:id="@+id/paidBillsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.paid.PaidBillsFragment"
+        android:label="fragment_paid_bills"
+        tools:layout="@layout/fragment_paid_bills" />
+    <fragment
+        android:id="@+id/unPaidFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.unpaid.UnPaidFragment"
+        android:label="fragment_un_paid"
+        tools:layout="@layout/fragment_un_paid" />
+</navigation>

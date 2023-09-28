@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@drawable/bg_login"
+    tools:context=".ui.fragments.management.bottom.dashboard.rentfees.RentFeesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/earnings"
+            android:textColor="@color/blueDark"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/free_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/incident_txt"
+                android:textAlignment="center"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_subscribe"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/ic_ripple_dark_blue_500_8"
+                android:text="@string/subscribe"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/DropdownFieldWithoutBorders"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_weight="1">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_all_properties"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/all_properties"
+                        android:inputType="text"
+                        android:textColor="@color/blueDark"
+                        android:textColorHint="@color/blueDark"
+                        android:textSize="@dimen/_12ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/DropdownFieldWithoutBorders"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_sub_properties"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/sub_properties"
+                        android:inputType="text"
+                        android:textColor="@color/blueDark"
+                        android:textColorHint="@color/blueDark"
+                        android:textSize="@dimen/_12ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/DropdownFieldWithoutBorders"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_weight="1">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownHeight="@dimen/_150sdp"
+                        android:enabled="false"
+                        android:fontFamily="@font/roboto_regular"
+                        android:hint="@string/_1_month"
+                        android:textColor="@color/blueDark"
+                        android:textColorHint="@color/blueDark"
+                        android:textSize="@dimen/_12ssp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingHorizontal="@dimen/_1sdp"
+                        android:text="@string/total_collected"
+                        android:textColor="@color/blueDark"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingHorizontal="@dimen/_1sdp"
+                        android:text="@string/vacant_properties"
+                        android:textColor="@color/blueDark"
+                        android:textSize="@dimen/_16ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/total_collected"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:paddingHorizontal="@dimen/_1sdp"
+                        android:text="@string/zero_dollar"
+                        android:textColor="@color/blueDark"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <TextView
+                        android:id="@+id/vacant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:paddingHorizontal="@dimen/_1sdp"
+                        android:text="@string/_0"
+                        android:textColor="@color/blueDark"
+                        android:textSize="@dimen/_18ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/properties"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_22ssp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/id_property_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/maintenance_report"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_22ssp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/id_maintenance_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/incident_repo"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_22ssp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/id_incident_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/unpaid_bills"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_22ssp" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/id_billing_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/linearLayout7"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:baselineAligned="false"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView5">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:fontFamily="@font/roboto_regular"-->
+    <!--                android:text="@string/start_date"-->
+    <!--                android:textColor="@color/blueDark"-->
+    <!--                android:textSize="@dimen/_12ssp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_start_date"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="@dimen/_6sdp"-->
+    <!--                android:layout_marginEnd="@dimen/_6sdp"-->
+    <!--                android:background="@drawable/txt_bg"-->
+    <!--                android:drawablePadding="@dimen/_8sdp"-->
+    <!--                android:fontFamily="@font/roboto_light"-->
+    <!--                android:gravity="start|center"-->
+    <!--                android:paddingVertical="@dimen/_8ssp"-->
+    <!--                android:paddingStart="@dimen/_12sdp"-->
+    <!--                android:paddingEnd="0dp"-->
+    <!--                android:text="@string/date2"-->
+    <!--                android:textColor="@color/blueDark"-->
+    <!--                android:textSize="@dimen/_12ssp"-->
+    <!--                app:drawableStartCompat="@drawable/ic_calendar"-->
+    <!--                app:drawableTint="@color/blueDark" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="@dimen/_6sdp"-->
+    <!--                android:layout_marginTop="@dimen/_10sdp"-->
+    <!--                android:fontFamily="@font/roboto_regular"-->
+    <!--                android:text="@string/end_date"-->
+    <!--                android:textColor="@color/blueDark"-->
+    <!--                android:textSize="@dimen/_12ssp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_end_date"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="@dimen/_6sdp"-->
+    <!--                android:layout_marginTop="@dimen/_6sdp"-->
+    <!--                android:background="@drawable/txt_bg"-->
+    <!--                android:drawablePadding="@dimen/_8sdp"-->
+    <!--                android:fontFamily="@font/roboto_light"-->
+    <!--                android:gravity="start|center"-->
+    <!--                android:paddingVertical="@dimen/_8ssp"-->
+    <!--                android:paddingStart="@dimen/_12sdp"-->
+    <!--                android:paddingEnd="0dp"-->
+    <!--                android:text="@string/date2"-->
+    <!--                android:textColor="@color/blueDark"-->
+    <!--                android:textSize="@dimen/_12ssp"-->
+    <!--                app:drawableStartCompat="@drawable/ic_calendar"-->
+    <!--                app:drawableTint="@color/blueDark" />-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->

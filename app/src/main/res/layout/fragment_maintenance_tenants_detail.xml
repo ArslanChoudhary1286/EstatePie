@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@drawable/bg_login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.tenants.bottom.dashboard.maintainrequest.detail.MaintenanceTenantsDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/no_popular_data_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/no_data_found"
+                    android:textColor="@color/blackDark"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/recyclerImages"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerImages"
+                    app:layout_constraintTop_toTopOf="@+id/recyclerImages" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerImages"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_260sdp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/item_image_slide" />
+
+                <com.arindicatorview.ARIndicatorView
+                    android:id="@+id/ar_indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:animate_indicator_scrubbing="true"
+                    app:indicator_animation="@anim/zoom_in"
+                    app:indicator_color="@color/white"
+                    app:indicator_scrubbing="true"
+                    app:indicator_shape="@drawable/round_shape"
+                    app:indicator_size="45"
+                    app:layout_constraintBottom_toBottomOf="@id/recyclerImages"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:number_of_indicators="5"
+                    app:selected_color="@color/blue" />
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:contentDescription="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_with_bg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="?actionBarItemBackground"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="start"
+                    android:textColor="@color/blueDark"
+                    android:textSize="@dimen/_16ssp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingHorizontal="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:text="@string/user_name"/>
+
+                <TextView
+                    android:id="@+id/request_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/_1sdp"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/status"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/request_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/date"/>
+
+            <TextView
+                android:id="@+id/request_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/request_type"/>
+
+            <TextView
+                android:id="@+id/property_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/property_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/description"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:textColor="@color/blueDark" />
+
+            <TextView
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/description"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

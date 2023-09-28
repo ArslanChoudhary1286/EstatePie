@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/white"
+    app:strokeWidth="0dp"
+    app:cardElevation="@dimen/_4sdp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImg"
+        android:layout_width="@dimen/_105sdp"
+        android:layout_height="@dimen/_90sdp"
+        app:cardElevation="@dimen/_2sdp"
+        android:background="@color/color_card_bg"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginVertical="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/house_image"
+            android:contentDescription="@null"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_house_gray"
+            android:scaleType="centerInside"/>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:chipStrokeWidth="0dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/_7ssp"
+        android:textColor="@color/white"
+        android:text="@string/view_bills"
+        app:chipMinTouchTargetSize="0dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:chipCornerRadius="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:chipBackgroundColor="@color/green"
+        app:chipMinHeight="@dimen/_18sdp" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/user_name"
+        android:textColor="@color/blackDark"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardImg"
+        app:layout_constraintTop_toBottomOf="@id/chipTime" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:maxLines="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/address"
+        android:textColor="@color/blackDark"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardImg"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvHouseNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:maxLines="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/house_23"
+        android:textColor="@color/blackDark"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cardImg"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

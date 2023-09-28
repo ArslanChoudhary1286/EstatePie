@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_navigation"
+    app:startDestination="@id/residentialFragment">
+
+    <fragment
+        android:id="@+id/residentialFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.residential.ResidentialFragment"
+        android:label="fragment_residential"
+        tools:layout="@layout/fragment_residential" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/commercialFragment2"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.commercial.CommercialFragment"
+        android:label="fragment_commercial"
+        tools:layout="@layout/fragment_commercial" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/adsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.ads.AdsFragment"
+        android:label="fragment_ads"
+        tools:layout="@layout/fragment_ads" />
+
+</navigation>

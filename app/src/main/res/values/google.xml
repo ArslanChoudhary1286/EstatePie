@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- For Google Map -->
+    <string name="google_map_key" translatable="false">AIzaSyALXaA5LSPJTExiJBW18EMumOolBg0LjVM</string>
+
+    <!-- For Google Login -->
+<!--    <string name="web_client_id" translatable="false">651881679904-4rlqjsil4cpai9hvomrap9s4hkjsu5ln.apps.googleusercontent.com</string>-->
+<!--    <string name="web_client_id" translatable="false">1028006061086-l2h4kqih330jj0mgos9t0gucd7qko9em.apps.googleusercontent.com</string>-->
+    <string name="web_client_id" translatable="false">1028006061086-r1krm0d779aotggmjj2bt5j9a8puqd0b.apps.googleusercontent.com</string>
+
+</resources>

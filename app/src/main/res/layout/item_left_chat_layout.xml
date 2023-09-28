@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_layout"
+    android:layout_gravity="start"
+    android:gravity="start"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="vertical">
+
+     <TextView
+         android:id="@+id/messageTxt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:fontFamily="@font/roboto_regular"
+         android:textColor="@color/white"
+         android:layout_marginEnd="@dimen/_40sdp"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+         android:padding="@dimen/_14sdp"
+         android:textAlignment="textStart"
+         android:text="Welcome to Dark Web"
+         android:textSize="@dimen/_14ssp"
+         android:background="@drawable/bg_left_chat"/>
+
+     <TextView
+         android:id="@+id/timeTxt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="12:12 am"
+         android:textSize="@dimen/_9sdp"
+         android:textColor="@color/color_house"
+         android:layout_gravity="start"
+         android:layout_marginEnd="@dimen/_14sdp"/>
+
+</LinearLayout>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@color/whiteBg"
+    tools:context=".ui.fragments.management.drawer.explore.detail.ManagementAdDetailFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_12sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerImages"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_260sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_image_slide" />
+
+        <com.arindicatorview.ARIndicatorView
+            android:id="@+id/ar_indicator"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:animate_indicator_scrubbing="true"
+            app:indicator_animation="@anim/zoom_in"
+            app:indicator_color="@color/white"
+            app:indicator_scrubbing="true"
+            app:indicator_shape="@drawable/round_shape"
+            app:indicator_size="45"
+            app:layout_constraintBottom_toBottomOf="@id/recyclerImages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:number_of_indicators="5"
+            app:selected_color="@color/blue" />
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_with_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="?actionBarItemBackground"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/recyclerImages"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            app:borderWidth="@dimen/_4sdp"
+            app:backgroundTint="@color/white"
+            android:backgroundTint="@color/blue"
+            app:fabSize="normal"
+            android:src="@drawable/ic_heart"
+            app:tint="@android:color/white"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"
+            android:contentDescription="@null" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/recyclerImages"
+            app:layout_constraintEnd_toStartOf="@id/fabHeart"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            app:borderWidth="@dimen/_4sdp"
+            app:backgroundTint="@color/white"
+            android:backgroundTint="@color/blue"
+            app:fabSize="normal"
+            android:src="@drawable/ic_share"
+            app:tint="@android:color/white"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/fabShare"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/blackDark"
+            android:fontFamily="@font/roboto_medium"
+            tools:text="Raya Sentosa Villa"/>
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/roboto_light"
+            android:drawablePadding="@dimen/_3sdp"
+            tools:text="Jennings Station Rd, Jennings, MO, USA"
+            app:drawableStartCompat="@drawable/ic_location" />
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/blackDark"
+            android:textSize="@dimen/_14ssp"
+            tools:text="$5000"/>
+        <TextView
+            android:id="@+id/tvAmountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tvAmount"
+            app:layout_constraintEnd_toEndOf="@id/tvAmount"
+            app:layout_constraintTop_toBottomOf="@id/tvAmount"
+            android:text="@string/amount"
+            android:textSize="@dimen/_9ssp"
+            android:fontFamily="@font/roboto_light"/>
+        <TextView
+            android:id="@+id/tvCategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress"
+            app:layout_constraintStart_toEndOf="@id/tvAmount"
+            app:layout_constraintEnd_toStartOf="@id/tvAvailTitle"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/blackDark"
+            android:textSize="@dimen/_14ssp"
+            android:text="@string/category"/>
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tvCategoryTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvCategoryTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvCategoryTitle"
+            tools:text="Commercial"
+            android:textSize="@dimen/_9ssp"
+            android:fontFamily="@font/roboto_light"/>
+        <TextView
+            android:id="@+id/tvAvailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvAddress"
+            app:layout_constraintStart_toEndOf="@id/tvCategoryTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/blackDark"
+            android:textSize="@dimen/_14ssp"
+            android:text="@string/avail_status"/>
+        <TextView
+            android:id="@+id/tvAvail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tvAvailTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvAvailTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvAvailTitle"
+            tools:text="Occupied"
+            android:textColor="@color/redGoogle"
+            android:textSize="@dimen/_9ssp"
+            android:fontFamily="@font/roboto_light"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_listed_by"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Listed By: empireSalon"/>
+                    <TextView
+                        android:id="@+id/tv_broker"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Broker: Yes"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_property_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Property Type :Duplex"/>
+                    <TextView
+                        android:id="@+id/tv_fees"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Fees: No"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_beds"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Bedrooms: 0"/>
+
+                    <TextView
+                        android:id="@+id/tv_smoking"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Smoking: No"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_bathrooms"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Bathrooms : 4"/>
+
+                    <TextView
+                        android:id="@+id/tv_pets"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Pets :Yes"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_multi_units"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Multi Units: Yes"/>
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Area: 120 Sq Mt"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_3sdp"
+                    android:orientation="horizontal">
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_fees"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:fontFamily="@font/roboto_light"-->
+<!--                        android:textSize="@dimen/_9ssp"-->
+<!--                        android:textColor="@color/blackDark"-->
+<!--                        android:text="Fees: No"/>-->
+                    <TextView
+                        android:id="@+id/tv_created_at"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="@dimen/_9ssp"
+                        android:textColor="@color/blackDark"
+                        tools:text="Added: 3 months ago"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardDetails"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:chipSpacing="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp">
+        </com.google.android.material.chip.ChipGroup>
+        <TextView
+            android:id="@+id/tvTitleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chipGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/blackDark"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/description"/>
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleDescription"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/blackDark"
+            tools:text="@string/dummy_text"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLeasingTerms"
+            style="@style/AppGradientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:text="@string/leasing_terms"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetInTouch"
+            style="@style/AppGradientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:text="@string/get_in_touch"
+            android:visibility="gone"
+            android:textColor="@color/blackDark"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLeasingTerms" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

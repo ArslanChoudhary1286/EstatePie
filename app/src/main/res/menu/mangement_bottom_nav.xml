@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/managementDashboardFragment"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard"/>
+    <item
+        android:id="@+id/propertiesFragment"
+        android:title="@string/properties"
+        android:icon="@drawable/ic_properties"/>
+    <item
+        android:id="@+id/tenantsFragment"
+        android:title="@string/tenants"
+        android:icon="@drawable/ic_tenant"/>
+    <item
+        android:id="@+id/billingFragment"
+        android:title="@string/billing"
+        android:icon="@drawable/ic_invoice"/>
+    <item
+        android:id="@+id/requestsFragment"
+        android:title="@string/requests"
+        android:icon="@drawable/ic_requests"/>
+</menu>

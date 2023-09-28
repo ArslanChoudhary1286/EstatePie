@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/managementDashboardFragment">
+
+    <fragment
+        android:id="@+id/managementPagerFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.pager.ManagementPagerFragment"
+        android:label="fragment_management_pager"
+        tools:layout="@layout/fragment_management_pager" >
+        <action
+            android:id="@+id/action_managementPagerFragment_to_managementDashboardFragment"
+            app:destination="@id/managementDashboardFragment" />
+        <action
+            android:id="@+id/action_managementPagerFragment_to_propertiesFragment"
+            app:destination="@id/propertiesFragment" />
+        <action
+            android:id="@+id/action_managementPagerFragment_to_tenantsFragment"
+            app:destination="@id/tenantsFragment" />
+        <action
+            android:id="@+id/action_managementPagerFragment_to_billingFragment"
+            app:destination="@id/billingFragment" />
+        <action
+            android:id="@+id/action_managementPagerFragment_to_requestsFragment"
+            app:destination="@id/requestsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/managementDashboardFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.ManagementDashboardFragment"
+        android:label="fragment_management_dashboard"
+        tools:layout="@layout/fragment_management_dashboard" >
+        <action
+            android:id="@+id/action_managementDashboardFragment_to_inboxFragment"
+            app:destination="@id/inboxFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_managementDashboardFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_managementDashboardFragment_to_billsWithFilterFragment"
+            app:destination="@id/billsWithFilterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_managementDashboardFragment_to_requestsByPropertyIdFragment"
+            app:destination="@id/requestsByPropertyIdFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_managementDashboardFragment_to_plansFragment2"
+            app:destination="@id/plansFragment2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/propertiesFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.PropertiesFragment"
+        android:label="fragment_properties"
+        tools:layout="@layout/fragment_properties" >
+        <action
+            android:id="@+id/action_propertiesFragment_to_addResidentialFragment"
+            app:destination="@id/addResidentialFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_addCommercialFragment"
+            app:destination="@id/addCommercialFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_addAdsFragment"
+            app:destination="@id/addAdsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_filterFragment"
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_managementAdDetailFragment"
+            app:destination="@id/managementAdDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_propertyDetailsFragment"
+            app:destination="@id/propertyDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_updateResidentialFragment"
+            app:destination="@id/updateResidentialFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_updateCommercialFragment"
+            app:destination="@id/updateCommercialFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_propertiesFragment_to_updateAdsFragment"
+            app:destination="@id/updateAdsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/userSettingsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.settings.UserSettingsFragment"
+        android:label="fragment_user_settings"
+        tools:layout="@layout/fragment_user_settings" >
+        <action
+            android:id="@+id/action_userSettingsFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/tenantsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.tenants.TenantsFragment"
+        android:label="fragment_tenants"
+        tools:layout="@layout/fragment_tenants" >
+        <action
+            android:id="@+id/action_tenantsFragment_to_tenantsProfileFragment"
+            app:destination="@id/tenantsProfileFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_tenantsFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_tenantsFragment_to_filterFragment"
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_tenantsFragment_to_assignPropertyToTenantFragment"
+            app:destination="@id/assignPropertyToTenantFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/billingFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.BillingFragment"
+        android:label="fragment_billing"
+        tools:layout="@layout/fragment_billing" >
+        <action
+            android:id="@+id/action_billingFragment_to_sendInvoiceFragment"
+            app:destination="@id/sendInvoiceFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_billingFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_billingFragment_to_unPaidBillsByTenantIdFragment2"
+            app:destination="@id/unPaidBillsByTenantIdFragment2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_billingFragment_to_paidBillsByTenantIdFragment"
+            app:destination="@id/paidBillsByTenantIdFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.requests.RequestsFragment"
+        android:label="fragment_requests"
+        tools:layout="@layout/fragment_requests" >
+        <action
+            android:id="@+id/action_requestsFragment_to_createEventFragment"
+            app:destination="@id/createEventFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_requestsFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_requestsFragment_to_maintenanceRequestDetailFragment"
+            app:destination="@id/maintenanceRequestDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_requestsFragment_to_incidentRequestDetailFragment"
+            app:destination="@id/incidentRequestDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_requestsFragment_to_eventsUpdatesDetailFragment"
+            app:destination="@id/eventsUpdatesDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_requestsFragment_to_plansFragment2"
+            app:destination="@id/plansFragment2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/tenantsProfileFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.tenants.profile.TenantsProfileFragment"
+        android:label="fragment_tenants_profile"
+        tools:layout="@layout/fragment_tenants_profile" />
+    <fragment
+        android:id="@+id/addResidentialFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.residential.addResidential.AddResidentialFragment"
+        android:label="fragment_add_residential"
+        tools:layout="@layout/fragment_add_residential" />
+    <fragment
+        android:id="@+id/addCommercialFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.commercial.addCommercial.AddCommercialFragment"
+        android:label="fragment_add_commercial"
+        tools:layout="@layout/fragment_add_commercial" />
+    <fragment
+        android:id="@+id/addAdsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.ads.addAds.AddAdsFragment"
+        android:label="fragment_add_ads"
+        tools:layout="@layout/fragment_add_ads" />
+    <fragment
+        android:id="@+id/sendInvoiceFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.sendinvoice.SendInvoiceFragment"
+        android:label="fragment_send_invoice"
+        tools:layout="@layout/fragment_send_invoice" />
+    <fragment
+        android:id="@+id/createEventFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.requests.event.create.CreateEventFragment"
+        android:label="fragment_create_event"
+        tools:layout="@layout/fragment_create_event" />
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.inbox.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" >
+        <action
+            android:id="@+id/action_inboxFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.inbox.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.settings.changepass.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_maintenanceRequestDetailFragment"
+            app:destination="@id/maintenanceRequestDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.filter.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.privacy.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.tips.TipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/helpsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.help.HelpsFragment"
+        android:label="fragment_helps"
+        tools:layout="@layout/fragment_helps" />
+    <fragment
+        android:id="@+id/plansFragment2"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.auth.plans.PlansFragment"
+        android:label="fragment_plans"
+        tools:layout="@layout/fragment_plans" />
+    <fragment
+        android:id="@+id/managementExploreAdsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.explore.exploreads.ManagementExploreAdsFragment"
+        android:label="fragment_management_explore_ads"
+        tools:layout="@layout/fragment_management_explore_ads" >
+        <action
+            android:id="@+id/action_managementExploreAdsFragment_to_managementAdDetailFragment"
+            app:destination="@id/managementAdDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_managementExploreAdsFragment_to_managementViewAllFragment"
+            app:destination="@id/managementViewAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/managementAdDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.explore.detail.ManagementAdDetailFragment"
+        android:label="fragment_management_ad_detail"
+        tools:layout="@layout/fragment_management_ad_detail" >
+        <action
+            android:id="@+id/action_managementAdDetailFragment_to_managementCompnyProfileFragment"
+            app:destination="@id/managementCompnyProfileFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/managementCompnyProfileFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.explore.compny.ManagementCompnyProfileFragment"
+        android:label="fragment_management_compny_profile"
+        tools:layout="@layout/fragment_management_compny_profile" >
+        <action
+            android:id="@+id/action_managementCompnyProfileFragment_to_managementAdDetailFragment"
+            app:destination="@id/managementAdDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/managementViewAllFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.explore.viewall.ManagementViewAllFragment"
+        android:label="fragment_management_view_all"
+        tools:layout="@layout/fragment_management_view_all" >
+        <action
+            android:id="@+id/action_managementViewAllFragment_to_managementFilterFragment"
+            app:destination="@id/managementFilterFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_managementViewAllFragment_to_managementAdDetailFragment"
+            app:destination="@id/managementAdDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/managementFilterFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.explore.filter.ManagementFilterFragment"
+        android:label="fragment_management_filter"
+        tools:layout="@layout/fragment_management_filter" />
+    <fragment
+        android:id="@+id/unPaidBillsByTenantIdFragment2"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.unpaid.UnPaidBillsByTenantIdFragment"
+        android:label="fragment_un_paid_bills_by_tenant_id"
+        tools:layout="@layout/fragment_un_paid_bills_by_tenant_id" >
+        <action
+            android:id="@+id/action_unPaidBillsByTenantIdFragment2_to_billDetailFragment"
+            app:destination="@id/billDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/paidBillsByTenantIdFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.paid.PaidBillsByTenantIdFragment"
+        android:label="fragment_paid_bills_by_tenant_id"
+        tools:layout="@layout/fragment_paid_bills_by_tenant_id" >
+        <action
+            android:id="@+id/action_paidBillsByTenantIdFragment_to_billDetailFragment"
+            app:destination="@id/billDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/billDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.billing.detail.BillDetailFragment"
+        android:label="fragment_bill_detail"
+        tools:layout="@layout/fragment_bill_detail" />
+    <fragment
+        android:id="@+id/assignPropertyToTenantFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.tenants.assign.AssignPropertyToTenantFragment"
+        android:label="fragment_assign_property_to_tenant"
+        tools:layout="@layout/fragment_assign_property_to_tenant" />
+    <fragment
+        android:id="@+id/propertyDetailsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.detail.PropertyDetailsFragment"
+        android:label="fragment_property_details"
+        tools:layout="@layout/fragment_property_details" />
+    <fragment
+        android:id="@+id/updateResidentialFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.residential.updateResidential.UpdateResidentialFragment"
+        android:label="fragment_update_residential"
+        tools:layout="@layout/fragment_update_residential" />
+    <fragment
+        android:id="@+id/updateCommercialFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.commercial.updateCommercial.UpdateCommercialFragment"
+        android:label="fragment_update_commercial"
+        tools:layout="@layout/fragment_update_commercial" />
+    <fragment
+        android:id="@+id/updateAdsFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.properties.ads.updateAds.UpdateAdsFragment"
+        android:label="fragment_update_ads"
+        tools:layout="@layout/fragment_update_ads" />
+    <fragment
+        android:id="@+id/billsWithFilterFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.billspayment.allbills.BillsWithFilterFragment"
+        android:label="fragment_bills_with_filter"
+        tools:layout="@layout/fragment_bills_with_filter" >
+        <action
+            android:id="@+id/action_billsWithFilterFragment_to_billDetailFragment"
+            app:destination="@id/billDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_billsWithFilterFragment_to_propertyBillsDetailFragment"
+            app:destination="@id/propertyBillsDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/requestsByPropertyIdFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.allreports.requestsByProperty.RequestsByPropertyIdFragment"
+        android:label="fragment_requests_by_property_id"
+        tools:layout="@layout/fragment_requests_by_property_id" >
+        <action
+            android:id="@+id/action_requestsByPropertyIdFragment_to_allReportsDetailFragment"
+            app:destination="@id/allReportsDetailFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/propertyBillsDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.billspayment.allbills.detail.PropertyBillsDetailFragment"
+        android:label="fragment_property_bills_detail"
+        tools:layout="@layout/fragment_property_bills_detail" />
+    <fragment
+        android:id="@+id/allReportsDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.dashboard.allreports.requestsByProperty.detail.AllReportsDetailFragment"
+        android:label="fragment_all_reports_detail"
+        tools:layout="@layout/fragment_all_reports_detail" />
+    <fragment
+        android:id="@+id/CSVFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.drawer.csv.CSVFragment"
+        android:label="fragment_c_s_v"
+        tools:layout="@layout/fragment_c_s_v" />
+    <fragment
+        android:id="@+id/maintenanceRequestDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.requests.maintenance.detail.MaintenanceRequestDetailFragment"
+        android:label="fragment_maintenance_request_detail"
+        tools:layout="@layout/fragment_maintenance_request_detail" />
+    <fragment
+        android:id="@+id/incidentRequestDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.requests.incident.detail.IncidentRequestDetailFragment"
+        android:label="fragment_incident_request_detail"
+        tools:layout="@layout/fragment_incident_request_detail" />
+    <fragment
+        android:id="@+id/eventsUpdatesDetailFragment"
+        android:name="com.jeuxdevelopers.estatepie.ui.fragments.management.bottom.requests.event.detail.EventsUpdatesDetailFragment"
+        android:label="fragment_events_updates_detail"
+        tools:layout="@layout/fragment_events_updates_detail" />
+
+
+</navigation>

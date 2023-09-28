@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1028006061086",
+    "firebase_url": "https://estate-pie-default-rtdb.firebaseio.com",
+    "project_id": "estate-pie",
+    "storage_bucket": "estate-pie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028006061086:android:6c087b84ad1b7be6413a0f",
+        "android_client_info": {
+          "package_name": "com.jeuxdevelopers.estatepie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028006061086-jb7nqempdp4gas25ivlr048hjfujgecv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNQoyaYWkuPcseLiGfPojkS7jhRDRyZ9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028006061086-jb7nqempdp4gas25ivlr048hjfujgecv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1028006061086-b9ljktr2o1ccnkakmjqbpo7ulsh6toof.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.EstatePieTekrevol"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.tenants.bottom.dashboard.upcomingbills.detail.UnPaidBillDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bill_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/bill_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:text="@string/name"/>
+
+            <TextView
+                android:id="@+id/bill_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:text="@string/status"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bill_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingHorizontal="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/date"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:text="Total Amount"/>
+
+            <TextView
+                android:id="@+id/bill_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:textColor="@color/blueDark"
+                android:textSize="@dimen/_16ssp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:text="@string/price_5k"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPayBill"
+            style="@style/AppGradientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:text="@string/pay_bill"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="?actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_back_with_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

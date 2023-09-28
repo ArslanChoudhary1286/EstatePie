@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue_with_house"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".ui.fragments.intro.IntroFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/abril_fatface_regular"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:text="@string/help_you_find"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_32ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/intro_description"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManagementSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/btnTenantSignup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            style="@style/AppSolidButton"
+            android:textColor="@color/white"
+            android:text="@string/management_signup"
+            android:backgroundTint="@color/blueVeryDark"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTenantSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            style="@style/AppSolidButton"
+            app:rippleColor="@color/blue"
+            android:textColor="@color/black"
+            android:text="@string/tenant_signup"
+            android:backgroundTint="@color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/btnExploreAds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            style="@style/AppSolidButton"
+            android:textColor="@color/white"
+            android:text="@string/login"
+            android:backgroundTint="@color/blackDark"/>
+        <TextView
+            android:id="@+id/btnExploreAds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_explore_ads"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_light_italic"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:paddingVertical="@dimen/_12ssp"
+            android:text="@string/explore_ads"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

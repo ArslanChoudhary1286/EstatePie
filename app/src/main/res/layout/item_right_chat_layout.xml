@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/right_chat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent">
+
+          <TextView
+              android:id="@+id/messageTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_right_chat"
+              android:fontFamily="@font/roboto_regular"
+              android:padding="@dimen/_14sdp"
+              android:layout_gravity="end"
+              android:layout_marginStart="@dimen/_40sdp"
+              android:text="Welcome to Dark Web"
+              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_14ssp" />
+
+          <TextView
+              android:id="@+id/timeTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="end"
+              android:textColor="@color/color_house"
+              android:text="12:12 am"
+              android:textSize="@dimen/_9sdp" />
+
+     </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
